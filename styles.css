@@ -1,0 +1,36 @@
+#header {
+  background-image: linear-gradient(#78c800, #FF8811, #FFF8F0);
+  margin-bottom: 20px;
+  color: #FFF8F0;
+  display: flex;
+  font-family: din-round, sans-serif;
+  justify-content: center;
+  width: 100vw;
+}
+
+.nav__ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-evenly;
+  background-color: #6654A0;
+  color: #FFF8F0;
+  font-family: "Fjalla One", sans-serif;
+}
+
+#canvas {
+  margin-bottom: 0px;
+  background-color: #FFF8F0;
+  width: 500px;
+  height: 400px;
+  display: block;
+  justify-content: center;
+}
+
+#answerDisplay {
+  height: 10vh;
+  width: 100vw;
+}
+
+#answerBox {
+  width: 100vw;
+}
