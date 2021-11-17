@@ -38,10 +38,17 @@ let answerInput = "";
 enterButton.addEventListener("click", (event) =>{
 
   answerInput = answerBox.value
-  console.log(answerInput);
-return answerInput
+
+  
+
+  if (answerInput === emojiQuestionsArr[0].answer) {
+    alert("Correct!");
+  }
+  else{
+    alert("Try again!");
+  }
 
 })
 
-const validatingAnswerInput
+
 
