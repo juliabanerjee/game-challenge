@@ -31,5 +31,17 @@ displayingQuestions()
 // template string
 //Setting up enter button
 const enterButton = document.querySelector("#enter")
+const answerBox = document.getElementById("answerbox")
+let answerInput = "";
 
-const answer = "";
+
+enterButton.addEventListener("click", (event) =>{
+
+  answerInput = answerBox.value
+  console.log(answerInput);
+return answerInput
+
+})
+
+const validatingAnswerInput
+
