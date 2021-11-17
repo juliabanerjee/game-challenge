@@ -15,24 +15,32 @@ const emojiQuestionsArr = [
 
 const displaySelected = document.querySelector("#emoji-display")
 
-const displayingQuestions = () => {
-  for (let i = 0; i < emojiQuestionsArr.length; i++) 
+// const displayingQuestions = () => {
+//   for (let i = 0; i < emojiQuestionsArr.length; i++) 
   
-  { 
-    const formattingQuestions = `<p>${emojiQuestionsArr[i].question}</p> `
-displaySelected.innerHTML += 
-formattingQuestions;
-}
+//   { 
+//     const formattingQuestions = `<p>${emojiQuestionsArr[i].question}</p> `
+// displaySelected.innerHTML += 
+// formattingQuestions;
+// }
+// }
+// displayingQuestions()
+let counter = 0;
+const displayingQuestions = () => {
+  const formattingQuestions = `<p>${emojiQuestionsArr[counter].question}</p> `
+  displaySelected.innerHTML = 
+  formattingQuestions;
 }
 displayingQuestions()
+// score display incrementing
+const 
 
-
-
-// template string
 //Setting up enter button
 const enterButton = document.querySelector("#enter")
 const answerBox = document.getElementById("answerbox")
 let answerInput = "";
+
+
 
 
 enterButton.addEventListener("click", (event) =>{
@@ -41,10 +49,13 @@ enterButton.addEventListener("click", (event) =>{
 
   
 
-  if (answerInput === emojiQuestionsArr[0].answer) {
+  if (answerInput === emojiQuestionsArr[counter].answer) {
     alert("Correct!");
+    counter++;
+    displayingQuestions()
   }
   else{
+    
     alert("Try again!");
   }
 
