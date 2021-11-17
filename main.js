@@ -32,8 +32,7 @@ const displayingQuestions = () => {
   formattingQuestions;
 }
 displayingQuestions()
-// score display incrementing
-const 
+
 
 //Setting up enter button
 const enterButton = document.querySelector("#enter")
@@ -41,7 +40,8 @@ const answerBox = document.getElementById("answerbox")
 let answerInput = "";
 
 
-
+// score display incrementing
+const score = document.querySelector("#score-total")
 
 enterButton.addEventListener("click", (event) =>{
 
@@ -52,6 +52,7 @@ enterButton.addEventListener("click", (event) =>{
   if (answerInput === emojiQuestionsArr[counter].answer) {
     alert("Correct!");
     counter++;
+    score.innerHTML++;
     displayingQuestions()
   }
   else{
@@ -62,4 +63,4 @@ enterButton.addEventListener("click", (event) =>{
 })
 
 
-
+//Black Eyed Peas
