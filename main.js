@@ -9,7 +9,59 @@ const emojiQuestionsArr = [
   },
   { question: "🐑 🐝 4️⃣ 0️⃣",
   answer: "UB40"
-}
+  },
+  { question: "💋",
+    answer: "Kiss"
+  },
+  { question: "🦍🦍",
+    answer: "Gorillaz"
+  },
+  { question: "🔫🔫 🌹🌹",
+    answer: "Guns N' Roses"
+  },
+  { question: "🏖️ 👦👦👦",
+    answer: "The Beach Boys"
+  },
+  { question: "🐈 🐟 🍾 👴👴👴",
+    answer: "Catfish And The Bottlemen"
+  },
+  { question: "🔨 🎃🎃🎃",
+    answer: " The Smashing Pumpkins"
+  },
+  { question: "2️⃣ 🎒",
+    answer: "2Pac"
+  },
+  { question: "🔴 🌡️ 🌶️🌶️",
+    answer: "Red Hot Chili Peppers"
+  },
+  { question: "🇸🇪 🏠 🔫",
+    answer: "Swedish House Mafia"
+  },
+  { question: "🌎 💨 🔥",
+    answer: "Earth, Wind & Fire"
+  },
+  { question: "🟢 📆",
+    answer: "Green Day"
+  },
+  { question: "🦅🦅🦅🦅",
+    answer: "Eagles"
+  },
+  { question: "✂️ 👯‍♀️",
+    answer: "Scissor Sisters"
+  },
+  { question: "🌶️ 👧👧",
+    answer: "Spice Girls"
+  },
+  { question: "",
+    answer: ""
+  },
+  { question: "",
+    answer: ""
+  },
+  { question: "",
+    answer: ""
+  }
+
 ];
 
 
