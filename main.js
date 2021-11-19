@@ -107,6 +107,7 @@ enterButton.addEventListener("click", (event) =>{
     counter++;
     score.innerHTML++;
     displayingQuestions()
+    answerBox.value = ""
   }
   else{
     
