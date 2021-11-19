@@ -68,16 +68,7 @@ const emojiQuestionsArr = [
 
 const displaySelected = document.querySelector("#emoji-display")
 
-// const displayingQuestions = () => {
-//   for (let i = 0; i < emojiQuestionsArr.length; i++) 
-  
-//   { 
-//     const formattingQuestions = `<p>${emojiQuestionsArr[i].question}</p> `
-// displaySelected.innerHTML += 
-// formattingQuestions;
-// }
-// }
-// displayingQuestions()
+
 let counter = 0;
 const displayingQuestions = () => {
   const formattingQuestions = `<p class = "emojis">${emojiQuestionsArr[counter].question}</p> `
@@ -99,10 +90,13 @@ const score = document.querySelector("#score-total")
 enterButton.addEventListener("click", (event) =>{
 
   answerInput = answerBox.value
+ let answerCapitaliseArr = answerInput.split(" ")
 
-  
+  for( i = 0; i < answerCapitaliseArr.length; i++) {
+    answerCapitaliseArr[i]= answerCapitaliseArr[i].toUpperCase()
+  }
 
-  if (answerInput === emojiQuestionsArr[counter].answer) {
+  if (answerInput.toLowerCase() === emojiQuestionsArr[counter].answer.toLowerCase()) {
     alert("Correct!");
     counter++;
     score.innerHTML++;

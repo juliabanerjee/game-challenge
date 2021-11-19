@@ -1,47 +1,60 @@
-#header {
-  background-image: linear-gradient(#78c800, #FF8811, #FFF8F0);
-  margin-bottom: 20px;
-  color: #FFF8F0;
-  display: flex;
-  font-family: din-round, sans-serif;
-  justify-content: center;
-  width: 100vw;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.nav__ul {
+body {
+  width: 100vw;
+}
+body .section1 {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+body .section1 #header {
+  text-align: center;
+  background-image: linear-gradient(#78c800, #FF8811, #FFF8F0);
+  margin-bottom: 10px;
+  color: #FFF8F0;
+  font-family: din-round, sans-serif;
+  padding: 10px;
+}
+body .section1 .nav__ul {
   list-style-type: none;
   justify-content: space-evenly;
   background-color: #6654A0;
   color: #FFF8F0;
   font-family: "Fjalla One", sans-serif;
+  display: flex;
 }
-
-#emoji-display {
+body .section1 .nav__ul li {
+  text-align: center;
+}
+body #emoji-display {
   background-color: #FFF8F0;
-  width: 100vw;
   height: 400px;
-  display: block;
-  justify-content: center;
-}
-#emoji-display .emojis {
   display: flex;
   justify-content: center;
+  margin-bottom: 10px;
+}
+body #emoji-display .emojis {
   padding-top: 150px;
   text-align: center;
-  font-size: 60px;
+  font-size: 80px;
 }
-
-#answerBox {
+body .section3 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+body .section3 #answerBox {
   margin-top: 10px;
   margin-left: 50vw;
 }
-
-#enter {
-  display: flex;
-  justify-content: center;
+body .section3 #enter {
   margin-top: 10px;
-  size: 10px;
   font-size: 18px;
   width: 50px;
   height: 30px;
@@ -49,38 +62,29 @@
   color: #FFF8F0;
   border-radius: 5px;
 }
-#enter:hover {
+body .section3 #enter:hover {
   color: #6654A0;
   background-color: #FFF8F0;
 }
 
 @media screen and (min-width: 768px) {
-  #header {
+  body .section1 #header {
     font-size: 70px;
     padding: 20px;
   }
-
-  .nav__ul {
+  body .section1 .nav__ul {
     padding: 10px;
     font-size: 25px;
   }
-
-  #emoji-display {
+  body #emoji-display {
     height: 550px;
   }
-
-  .emojis {
-    font-size: 150px;
-  }
-
-  #answerBox {
+  body .section3 {
     display: flex;
-    justify-content: center;
-    margin-top: 10px;
-    margin-left: 50vw;
+    flex-direction: column;
+    align-items: center;
   }
-
-  #enter {
+  body .section3 #answerBox {
     display: flex;
     justify-content: center;
     margin-top: 10px;
