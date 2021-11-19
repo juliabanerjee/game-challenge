@@ -27,7 +27,7 @@ const emojiQuestionsArr = [
     answer: "Catfish And The Bottlemen"
   },
   { question: "🔨 🎃🎃🎃",
-    answer: " The Smashing Pumpkins"
+    answer: "The Smashing Pumpkins"
   },
   { question: "2️⃣ 🎒",
     answer: "2Pac"
@@ -56,7 +56,7 @@ const emojiQuestionsArr = [
   { question: "🌈 🧘",
     answer: "Nirvana"
   },
-  { question: "1️⃣✖️1️⃣=1️⃣ 4️⃣1️⃣",
+  { question: "1️⃣✖️1️⃣=1️⃣   4️⃣1️⃣",
     answer: "Sum 41"
   },
   { question: "📻 🗣️",
@@ -90,8 +90,7 @@ const score = document.querySelector("#score-total")
 enterButton.addEventListener("click", (event) =>{
 
   answerInput = answerBox.value
- let answerCapitaliseArr = answerInput.split(" ")
-
+  let answerCapitaliseArr = answerInput.split(" ")
   for( i = 0; i < answerCapitaliseArr.length; i++) {
     answerCapitaliseArr[i]= answerCapitaliseArr[i].toUpperCase()
   }
@@ -103,12 +102,13 @@ enterButton.addEventListener("click", (event) =>{
     displayingQuestions()
     answerBox.value = ""
   }
-  else{
-    
+  else {
+  
     alert("Try again!");
   }
 
 })
 
+// win alert button when 20th Q has been answered
 
-//Black Eyed Peas
+
