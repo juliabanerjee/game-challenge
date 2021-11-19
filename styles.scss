@@ -1,7 +1,7 @@
 @import "./assets/styles/variables";
 
 
-  #header {  
+#header {
   background-image: linear-gradient($primarycolor, $secondarycolor, $tertiarycolor);
   margin-bottom: 20px;
   color: $tertiarycolor;
@@ -11,27 +11,34 @@
   width: 100vw;
 }
 
-.nav__ul{
+.nav__ul {
   display: flex;
   list-style-type: none;
   justify-content: space-evenly;
-  background-color: $quaternarycolor ;
+  background-color: $quaternarycolor;
   color: $tertiarycolor;
   font-family: $secondaryfont;
 }
-p{
-  margin-bottom: 0px;
-background-color: $tertiarycolor;
-width: 500px;
-height: 400px;
-display: block;
-justify-content: center;
+
+#emoji-display {
+  background-color: $tertiarycolor;
+  width: 100vw;
+  height: 400px;
+  display: block;
+  justify-content: center;
+
+  .emojis {
+    display: flex;
+    justify-content: center;
+    padding: 0%;
+    text-align: center;
+    font-size: 30px;
+  }
+
 
 }
-#answerDisplay{
-  height: 10vh;
+
+#answerBox {
   width: 100vw;
 }
-#answerBox{
-  width: 100vw;
-}
+

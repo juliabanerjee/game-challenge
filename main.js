@@ -1,5 +1,6 @@
-// create an array of onjects with emoji questions
 
+
+// create an array of onjects with emoji questions
 const emojiQuestionsArr = [
   { question: "⬛👁️🅿️🅿️",
     answer: "Black Eyed Peas"
@@ -52,14 +53,14 @@ const emojiQuestionsArr = [
   { question: "🌶️ 👧👧",
     answer: "Spice Girls"
   },
-  { question: "",
-    answer: ""
+  { question: "🌈 🧘",
+    answer: "Nirvana"
   },
-  { question: "",
-    answer: ""
+  { question: "1️⃣✖️1️⃣=1️⃣ 4️⃣1️⃣",
+    answer: "Sum 41"
   },
-  { question: "",
-    answer: ""
+  { question: "📻 🗣️",
+    answer: "Radiohead"
   }
 
 ];
@@ -79,7 +80,7 @@ const displaySelected = document.querySelector("#emoji-display")
 // displayingQuestions()
 let counter = 0;
 const displayingQuestions = () => {
-  const formattingQuestions = `<p>${emojiQuestionsArr[counter].question}</p> `
+  const formattingQuestions = `<p class = "emojis">${emojiQuestionsArr[counter].question}</p> `
   displaySelected.innerHTML = 
   formattingQuestions;
 }

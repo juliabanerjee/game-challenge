@@ -17,18 +17,19 @@
   font-family: "Fjalla One", sans-serif;
 }
 
-p {
-  margin-bottom: 0px;
+#emoji-display {
   background-color: #FFF8F0;
-  width: 500px;
+  width: 100vw;
   height: 400px;
   display: block;
   justify-content: center;
 }
-
-#answerDisplay {
-  height: 10vh;
-  width: 100vw;
+#emoji-display .emojis {
+  display: flex;
+  justify-content: center;
+  padding: 0%;
+  text-align: center;
+  font-size: 30px;
 }
 
 #answerBox {
